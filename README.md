@@ -1,5 +1,5 @@
-# Linux Debian VPS Autoconfiguration
-This python script is about autoconfiguring linux debian virtual private servers via ssh
+# Debian VPS Autoconfiguration
+This python script is about autoconfiguring debian virtual private servers via ssh
 
 
 ## Requirements
