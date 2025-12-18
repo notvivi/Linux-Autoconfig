@@ -32,6 +32,7 @@ def run_script():
 
 def run_main_process():
     """
+    Runs the whole process. Disables button and then enables it.
     :return:
     """
     exe_path = sys.executable
@@ -66,6 +67,10 @@ def run_main_process():
 
 
 def write_into_config():
+    """
+    Writes user input from ui into config file.
+    :return: None
+    """
     data = {
         "linux_vpss_file": vps_file_path.get(),
         "log_file": log_file_path.get(),
@@ -79,6 +84,10 @@ def write_into_config():
 
 
 def select_log_file():
+    """
+    Used for selecting log file.
+    :return: None
+    """
     path = filedialog.askopenfilename(
         title="Add log file",
         filetypes=(("Textové soubory", "*.txt"), ("Všechny soubory", "*.*"))
@@ -87,6 +96,10 @@ def select_log_file():
         log_file_path.set(path)
 
 def select_vps_file():
+    """
+    Used for selecting Debian VPS file.
+    :return: None
+    """
     path = filedialog.askopenfilename(
         title="Vyber VPS soubor",
         filetypes=(("Textové soubory", "*.txt"), ("Všechny soubory", "*.*"))
@@ -127,6 +140,11 @@ output_text.pack(pady=5)
 
 
 def write_output(text):
+    """
+    Writes output into UI text area.
+    :param text:
+    :return:
+    """
     output_text.config(state="normal")
     output_text.insert(tk.END, text)
     output_text.see(tk.END)

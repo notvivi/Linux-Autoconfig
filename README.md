@@ -13,7 +13,7 @@ This python script is about autoconfiguring debian virtual private servers via s
 - python 3.10.0 and more
 - pyinstaller and paramiko
 
-## How to download pyinstaller and paramiko
+## How to install pyinstaller and paramiko
 1. Open terminal
 2. Copy `pip install pyinstaller` and paste it into terminal, press enter
 3. Copy `pip install paramiko` and paste it into terminal, press enter
@@ -21,4 +21,13 @@ This python script is about autoconfiguring debian virtual private servers via s
 
 ## How to START
 After setting up everything, find exe in `\dist\userinterface.exe`
+
+## If you want
+- This command can be used for creating your own exe
+- `pyinstaller --noconfirm --onefile --windowed --add-data "src;src" --add-data "lib;lib" --name "VPS_Manager" src/userinterface.py`
+
+
+## Warning and future updates
+- Right now, you should not manipulate with commands that are used for configuration
+- This will be added in future updates
 
